@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('checkout'){
+    /*    stage('checkout'){
             steps {
                 checkout scm }
         }
@@ -53,9 +53,9 @@ post {
                                       sh 'mvn sonar:sonar -Dsonar.java.binaries=target/classes'
            }
            }
-       }
+       }*/
 
-/* stage('Nexus') {
+ stage('Nexus') {
                            
             steps {
              
@@ -63,7 +63,7 @@ post {
            
             }
                
-            }*/
+            }
         //
       // stage('Déploiement') {
       //       steps {
